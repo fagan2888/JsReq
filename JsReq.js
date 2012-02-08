@@ -70,7 +70,7 @@ JsReq.prototype.include = function( fileName, once) {
 	once = once || false;
 	if( !once || !this._importList[fileName] ) {
 		var script	= document.createElement('script');
-		script.type = 'text/javascript';
+		script.type 	= 'text/javascript';
 		script.src	= this.pathPrefix + fileName + this.fileSuffix;
 		document.getElementsByTagName('head')[0].appendChild(script);
 		this._importList[fileName] = true;
